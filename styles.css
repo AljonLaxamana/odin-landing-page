@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@100;300;400;700&display=swap");
+
+:root {
+  --clr-primary: 235, 94, 40;
+  --clr-900: 255, 252, 242;
+  --clr-700: 204, 197, 185;
+  --clr_600: 64, 61, 57;
+  --clr_400: 37, 36, 34;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* basic reset */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* custom classes */
+.container {
+  margin-inline: 10rem;
+}
+
+/* general styling */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(var(--clr-900));
+}
+
+header {
+  background-color: rgb(var(--clr_400));
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 4rem;
+}
+
+.navbar-logo {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgba(var(--clr-primary), 0.9);
+  transition: all ease-in 250ms;
+}
+
+.navbar-logo:hover {
+  color: rgba(var(--clr-primary), 1);
+  transform: translateY(-10%);
+  filter: drop-shadow(2px 2px 2px);
+}
+
+.navbar-links-container {
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  color: rgb(var(--clr-900));
+}
+
+.navbar-links-container li {
+  transition: all ease-in-out 250ms;
+}
+
+.navbar-links-container li:hover {
+  color: rgb(var(--clr-primary));
+  transform: translateY(-10%);
+}
