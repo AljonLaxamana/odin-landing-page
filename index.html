@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-    <title>Kick.Me</title>
+    <title>Kick Me</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,11 +12,11 @@
       <nav class="navbar container">
         <div class="navbar-logo">
           <a href="/">
-            <h3>Kick.Me</h3>
+            <h3>Kick Me</h3>
           </a>
         </div>
         <ul class="navbar-links-container">
-          <li><a href="#">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Testimonials</a></li>
         </ul>
@@ -25,17 +25,23 @@
     <main>
       <section class="hero container">
         <div class="hero-details">
-          <h1 class="hero-title">Welcome to Kick.Me</h1>
+          <h1 class="hero-title">
+            Welcome to <span class="brand-name">Kick Me</span>,
+          </h1>
           <p class="hero-description">
             Discover the perfect pair of shoes for every occasion.
           </p>
-          <button class="hero-signup-btn">Shop Now</button>
+          <a href="#main-content"
+            ><button class="hero-button">Shop Now</button></a
+          >
         </div>
-        <div class="hero-image"></div>
+        <div class="hero-image">
+          <img src="/images/hero-picture.jpg" alt="a orange shoes" />
+        </div>
       </section>
 
-      <section class="main-content-section container">
-        <h2>Some random information</h2>
+      <section id="main-content" class="main-content-section container">
+        <h2>Choose your favorite pair</h2>
         <div class="cards-container">
           <div class="card">
             <img src="" alt="" class="card-img-container" />
@@ -55,6 +61,7 @@
           </div>
         </div>
       </section>
+
       <section class="testimonials container">
         <div class="testimonial-card">
           <p class="testimonial"></p>
@@ -69,11 +76,12 @@
           <p class="testimonial-author"></p>
         </div>
       </section>
+
       <section class="call-to-action container">
         <div class="cta">
-          <h4>Call to action! It's time!</h4>
+          <h4>Want some pair?</h4>
           <p>
-            Sign up for our product by clicking that button right over there!
+            Shop now for our product by clicking that button right over there!
           </p>
         </div>
         <button class="cta-btn">Sign up</button>
